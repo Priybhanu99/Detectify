@@ -13,10 +13,6 @@ CORS(app)
 @app.route('/uploader', methods = ['GET', 'POST'])
 def upload():
     detected_file=detector.hash()
-    print(detected_file)
-    # if detected_file == '':
-    #     return detected_file
-    # else :
     return jsonify(detected_file)
 
 

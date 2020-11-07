@@ -1,7 +1,11 @@
 import hashlib
+from flask import jsonify
 from malware_report import report_malware
+from file_report import fileReport
 
+filePath = 'D:/SYSTEM DATA/Downloads/'
 def hash_calc(filename):
+    print(filename)
     sha256_hash = hashlib.sha256()
     with open(filename,"rb") as f:
         # Read and update hash string value in blocks of 4K
@@ -9,12 +13,11 @@ def hash_calc(filename):
             sha256_hash.update(byte_block)
         print('sha256: '+sha256_hash.hexdigest())
         if filename=='itachi.jpg' :
-            pass
+            return 
         else :
             print(filename)
-            return report_malware(sha256_hash.hexdigest())
-        # temp=''
-        # return temp
+            return (report_malware(sha256_hash.hexdigest()))
+            
     #sha1 hash
     sha1_hash = hashlib.sha1()
     with open(filename,'rb') as f:

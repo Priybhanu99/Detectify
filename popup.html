@@ -51,6 +51,7 @@
       }
 
       .modal-content {
+        /* font-style: italic; */
         padding: 0 22px;
       }
 
@@ -94,14 +95,22 @@
         font-size: 40px;
         color: #2f5876;
       }
+
+      .bold{
+        font-weight:bold;
+        /* font-size: 20px; */
+      }
+      .ital {
+        font-style: italic;
+      }
     </style>
     
   </head>
 
   <body>
-    <div class="modal-header">
+    <div style="background-color: #21FFDC " class="modal-header">
 
-      <h1 class="logo">DETECTIFY</h1>
+      <h1 class="logo"><u><b>DETECTIFY</b></u></h1>
 
       <pre>
       by Priybhanu Yadav
@@ -110,8 +119,8 @@
     </div>
     <div class="modal-content">
       <p>Easily detect malicious files automatically when you download files</p>
-      <!-- <h4>..No new downloaded files..</h4> -->
-      <div id ='detector'></div>
+      <div class="bold" id ='detector'></div>
+      <br/>
     </div>
     
 
