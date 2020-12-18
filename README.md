@@ -10,6 +10,12 @@ A Chrome extension which will detect whether the file you have downloaded contai
 3.  Hashlib lirary to calculate various hashes
 4.  VirusTotal API to detect malware
 
+## Data Flow 
+<img src="https://github.com/Priybhanu99/Detectify/blob/main/images/data%20flow.png" width="250" height = "400">
+
+## The App
+<img src="https://github.com/Priybhanu99/Detectify/blob/main/images/app.jpg" width="500" height = "300">
+
 ##  How to run web app
 First load your project in your chrome :
 1. Go to chrome's setting and then to extension.
